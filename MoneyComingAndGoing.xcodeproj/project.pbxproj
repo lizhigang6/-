@@ -7,14 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE5DAB061FE1135500B52CBD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5DAB051FE1135500B52CBD /* LocalAuthentication.framework */; };
+		CE629A401FE0D26D002CF98B /* BOPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE629A3F1FE0D26D002CF98B /* BOPViewController.swift */; };
+		CE629A421FE0D440002CF98B /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE629A411FE0D440002CF98B /* FindViewController.swift */; };
 		CE795C8B1FDF6CA200559A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE795C8A1FDF6CA200559A52 /* AppDelegate.swift */; };
 		CE795C8D1FDF6CA200559A52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE795C8C1FDF6CA200559A52 /* ViewController.swift */; };
 		CE795C901FDF6CA200559A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE795C8E1FDF6CA200559A52 /* Main.storyboard */; };
 		CE795C921FDF6CA200559A52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE795C911FDF6CA200559A52 /* Assets.xcassets */; };
 		CE795C951FDF6CA200559A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE795C931FDF6CA200559A52 /* LaunchScreen.storyboard */; };
+		CE9B45EA1FDFE03A0020C21D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B45E91FDFE03A0020C21D /* MainViewController.swift */; };
+		CE9B45EC1FDFE29B0020C21D /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B45EB1FDFE29B0020C21D /* MeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE5DAB051FE1135500B52CBD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		CE629A3F1FE0D26D002CF98B /* BOPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOPViewController.swift; sourceTree = "<group>"; };
+		CE629A411FE0D440002CF98B /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
 		CE795C871FDF6CA200559A52 /* MoneyComingAndGoing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyComingAndGoing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE795C8A1FDF6CA200559A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE795C8C1FDF6CA200559A52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +30,8 @@
 		CE795C911FDF6CA200559A52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE795C941FDF6CA200559A52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE795C961FDF6CA200559A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE9B45E91FDFE03A0020C21D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		CE9B45EB1FDFE29B0020C21D /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE5DAB061FE1135500B52CBD /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE5DAB041FE1135500B52CBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE5DAB051FE1135500B52CBD /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE795C7E1FDF6CA100559A52 = {
 			isa = PBXGroup;
 			children = (
 				CE795C891FDF6CA200559A52 /* MoneyComingAndGoing */,
 				CE795C881FDF6CA200559A52 /* Products */,
+				CE5DAB041FE1135500B52CBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +76,10 @@
 			children = (
 				CE795C8A1FDF6CA200559A52 /* AppDelegate.swift */,
 				CE795C8C1FDF6CA200559A52 /* ViewController.swift */,
+				CE629A411FE0D440002CF98B /* FindViewController.swift */,
+				CE629A3F1FE0D26D002CF98B /* BOPViewController.swift */,
+				CE9B45E91FDFE03A0020C21D /* MainViewController.swift */,
+				CE9B45EB1FDFE29B0020C21D /* MeViewController.swift */,
 				CE795C8E1FDF6CA200559A52 /* Main.storyboard */,
 				CE795C911FDF6CA200559A52 /* Assets.xcassets */,
 				CE795C931FDF6CA200559A52 /* LaunchScreen.storyboard */,
@@ -136,8 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE9B45EA1FDFE03A0020C21D /* MainViewController.swift in Sources */,
 				CE795C8D1FDF6CA200559A52 /* ViewController.swift in Sources */,
+				CE9B45EC1FDFE29B0020C21D /* MeViewController.swift in Sources */,
 				CE795C8B1FDF6CA200559A52 /* AppDelegate.swift in Sources */,
+				CE629A401FE0D26D002CF98B /* BOPViewController.swift in Sources */,
+				CE629A421FE0D440002CF98B /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +306,10 @@
 				DEVELOPMENT_TEAM = PCL6S4ZCPW;
 				INFOPLIST_FILE = MoneyComingAndGoing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = able.com.test.MoneyComingAndGoing;
+				PRODUCT_BUNDLE_IDENTIFIER = bzdkj.mcag.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -293,10 +321,10 @@
 				DEVELOPMENT_TEAM = PCL6S4ZCPW;
 				INFOPLIST_FILE = MoneyComingAndGoing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = able.com.test.MoneyComingAndGoing;
+				PRODUCT_BUNDLE_IDENTIFIER = bzdkj.mcag.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
