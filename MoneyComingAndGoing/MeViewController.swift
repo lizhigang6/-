@@ -42,7 +42,7 @@ class MeViewController: UIViewController,UITableViewDelegate ,UITableViewDataSou
                           "关于"]
         
         
-        self.tableView = UITableView(frame:CGRect(x:0, y:0, width:self.view.frame.size.width, height:self.view.frame.size.height), style:.plain)
+        self.tableView = UITableView(frame:CGRect(x:0, y:0, width:kScreenWidth, height:self.view.frame.size.height), style:.plain)
         self.tableView.delegate = self
         self.tableView.dataSource = self
         self.tableView.rowHeight = 50.0
@@ -65,7 +65,7 @@ class MeViewController: UIViewController,UITableViewDelegate ,UITableViewDataSou
         
         if (indexPath.row == 0) {
             
-            uiswitch.center = CGPoint(x:self.view.frame.size.width-45, y:25)
+            uiswitch.center = CGPoint(x:kScreenWidth-45, y:25)
             uiswitch.isOn = true;
             
             uiswitch.addTarget(self, action: #selector(switchDidChange), for:.valueChanged)
@@ -78,7 +78,7 @@ class MeViewController: UIViewController,UITableViewDelegate ,UITableViewDataSou
         else
         {
             let imageView = UIImageView(image:UIImage(named:"go_right"))
-            imageView.frame = CGRect(x:self.view.frame.size.width-35, y:15, width:20, height:20)
+            imageView.frame = CGRect(x:kScreenWidth-35, y:15, width:20, height:20)
             
             
             cell!.contentView.addSubview(imageView)

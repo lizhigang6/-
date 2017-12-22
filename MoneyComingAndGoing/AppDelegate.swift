@@ -9,6 +9,8 @@
 import UIKit
 import LocalAuthentication
 
+let kScreenWidth = UIScreen.main.bounds.size.width
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

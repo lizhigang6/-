@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58FF933F8ABF795F787B2837 /* Pods_MoneyComingAndGoing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF18D6EC4656BC65596CF9 /* Pods_MoneyComingAndGoing.framework */; };
 		CE5DAB061FE1135500B52CBD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5DAB051FE1135500B52CBD /* LocalAuthentication.framework */; };
 		CE629A401FE0D26D002CF98B /* BOPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE629A3F1FE0D26D002CF98B /* BOPViewController.swift */; };
 		CE629A421FE0D440002CF98B /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE629A411FE0D440002CF98B /* FindViewController.swift */; };
+		CE6DF56A1FEA59A900773931 /* ADDAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DF5691FEA59A900773931 /* ADDAccountViewController.swift */; };
 		CE795C8B1FDF6CA200559A52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE795C8A1FDF6CA200559A52 /* AppDelegate.swift */; };
 		CE795C8D1FDF6CA200559A52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE795C8C1FDF6CA200559A52 /* ViewController.swift */; };
 		CE795C901FDF6CA200559A52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE795C8E1FDF6CA200559A52 /* Main.storyboard */; };
@@ -20,9 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E76D98CF1FDC3AC7497C0EA /* Pods-MoneyComingAndGoing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyComingAndGoing.release.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyComingAndGoing/Pods-MoneyComingAndGoing.release.xcconfig"; sourceTree = "<group>"; };
 		CE5DAB051FE1135500B52CBD /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 		CE629A3F1FE0D26D002CF98B /* BOPViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BOPViewController.swift; sourceTree = "<group>"; };
 		CE629A411FE0D440002CF98B /* FindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindViewController.swift; sourceTree = "<group>"; };
+		CE6DF5691FEA59A900773931 /* ADDAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADDAccountViewController.swift; sourceTree = "<group>"; };
 		CE795C871FDF6CA200559A52 /* MoneyComingAndGoing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyComingAndGoing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE795C8A1FDF6CA200559A52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE795C8C1FDF6CA200559A52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +36,8 @@
 		CE795C961FDF6CA200559A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9B45E91FDFE03A0020C21D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE9B45EB1FDFE29B0020C21D /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		D5BF18D6EC4656BC65596CF9 /* Pods_MoneyComingAndGoing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyComingAndGoing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB5E1CBC3F38CD89DB58B805 /* Pods-MoneyComingAndGoing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyComingAndGoing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyComingAndGoing/Pods-MoneyComingAndGoing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,16 +46,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE5DAB061FE1135500B52CBD /* LocalAuthentication.framework in Frameworks */,
+				58FF933F8ABF795F787B2837 /* Pods_MoneyComingAndGoing.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15B3228ACEC6D31E192661F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DB5E1CBC3F38CD89DB58B805 /* Pods-MoneyComingAndGoing.debug.xcconfig */,
+				3E76D98CF1FDC3AC7497C0EA /* Pods-MoneyComingAndGoing.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CE5DAB041FE1135500B52CBD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				CE5DAB051FE1135500B52CBD /* LocalAuthentication.framework */,
+				D5BF18D6EC4656BC65596CF9 /* Pods_MoneyComingAndGoing.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -60,6 +77,7 @@
 				CE795C891FDF6CA200559A52 /* MoneyComingAndGoing */,
 				CE795C881FDF6CA200559A52 /* Products */,
 				CE5DAB041FE1135500B52CBD /* Frameworks */,
+				15B3228ACEC6D31E192661F8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,6 +96,7 @@
 				CE795C8C1FDF6CA200559A52 /* ViewController.swift */,
 				CE629A411FE0D440002CF98B /* FindViewController.swift */,
 				CE629A3F1FE0D26D002CF98B /* BOPViewController.swift */,
+				CE6DF5691FEA59A900773931 /* ADDAccountViewController.swift */,
 				CE9B45E91FDFE03A0020C21D /* MainViewController.swift */,
 				CE9B45EB1FDFE29B0020C21D /* MeViewController.swift */,
 				CE795C8E1FDF6CA200559A52 /* Main.storyboard */,
@@ -95,9 +114,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE795C991FDF6CA200559A52 /* Build configuration list for PBXNativeTarget "MoneyComingAndGoing" */;
 			buildPhases = (
+				93F78B95D397E2A55A71AC49 /* [CP] Check Pods Manifest.lock */,
 				CE795C831FDF6CA100559A52 /* Sources */,
 				CE795C841FDF6CA100559A52 /* Frameworks */,
 				CE795C851FDF6CA100559A52 /* Resources */,
+				9DBAFD9E1A6B11DBF6E1EEC9 /* [CP] Embed Pods Frameworks */,
+				4F7FC8BD261F4FB1ED741B12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,6 +177,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F7FC8BD261F4FB1ED741B12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyComingAndGoing/Pods-MoneyComingAndGoing-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93F78B95D397E2A55A71AC49 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoneyComingAndGoing-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DBAFD9E1A6B11DBF6E1EEC9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyComingAndGoing/Pods-MoneyComingAndGoing-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MoneyComingAndGoing/Pods-MoneyComingAndGoing-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CE795C831FDF6CA100559A52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -165,6 +241,7 @@
 				CE9B45EC1FDFE29B0020C21D /* MeViewController.swift in Sources */,
 				CE795C8B1FDF6CA200559A52 /* AppDelegate.swift in Sources */,
 				CE629A401FE0D26D002CF98B /* BOPViewController.swift in Sources */,
+				CE6DF56A1FEA59A900773931 /* ADDAccountViewController.swift in Sources */,
 				CE629A421FE0D440002CF98B /* FindViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,10 +377,15 @@
 		};
 		CE795C9A1FDF6CA200559A52 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB5E1CBC3F38CD89DB58B805 /* Pods-MoneyComingAndGoing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCL6S4ZCPW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoneyComingAndGoing",
+				);
 				INFOPLIST_FILE = MoneyComingAndGoing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bzdkj.mcag.com;
@@ -315,10 +397,15 @@
 		};
 		CE795C9B1FDF6CA200559A52 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E76D98CF1FDC3AC7497C0EA /* Pods-MoneyComingAndGoing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PCL6S4ZCPW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MoneyComingAndGoing",
+				);
 				INFOPLIST_FILE = MoneyComingAndGoing/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bzdkj.mcag.com;
