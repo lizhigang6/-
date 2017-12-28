@@ -5,4 +5,5 @@ use_frameworks!
 target 'MoneyComingAndGoing' do
     pod 'Alamofire', '~> 4.5'
     pod 'RealmSwift'
+    pod 'Charts'
 end
