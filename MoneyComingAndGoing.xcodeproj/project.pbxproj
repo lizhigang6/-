@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		58FF933F8ABF795F787B2837 /* Pods_MoneyComingAndGoing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF18D6EC4656BC65596CF9 /* Pods_MoneyComingAndGoing.framework */; };
-		CE5DAB061FE1135500B52CBD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5DAB051FE1135500B52CBD /* LocalAuthentication.framework */; };
+		58FF933F8ABF795F787B2837 /* Pods_MoneyComingAndGoing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5BF18D6EC4656BC65596CF9 /* Pods_MoneyComingAndGoing.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		CE5DAB061FE1135500B52CBD /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE5DAB051FE1135500B52CBD /* LocalAuthentication.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		CE629A401FE0D26D002CF98B /* BOPViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE629A3F1FE0D26D002CF98B /* BOPViewController.swift */; };
 		CE629A421FE0D440002CF98B /* FindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE629A411FE0D440002CF98B /* FindViewController.swift */; };
 		CE6DF56A1FEA59A900773931 /* ADDAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6DF5691FEA59A900773931 /* ADDAccountViewController.swift */; };
@@ -19,6 +19,7 @@
 		CE795C951FDF6CA200559A52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE795C931FDF6CA200559A52 /* LaunchScreen.storyboard */; };
 		CE9B45EA1FDFE03A0020C21D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B45E91FDFE03A0020C21D /* MainViewController.swift */; };
 		CE9B45EC1FDFE29B0020C21D /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B45EB1FDFE29B0020C21D /* MeViewController.swift */; };
+		CED5E1101FF3A9CF00F63BC1 /* ClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED5E10F1FF3A9CF00F63BC1 /* ClassViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		CE795C961FDF6CA200559A52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE9B45E91FDFE03A0020C21D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		CE9B45EB1FDFE29B0020C21D /* MeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
+		CED5E10F1FF3A9CF00F63BC1 /* ClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassViewController.swift; sourceTree = "<group>"; };
 		D5BF18D6EC4656BC65596CF9 /* Pods_MoneyComingAndGoing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoneyComingAndGoing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5E1CBC3F38CD89DB58B805 /* Pods-MoneyComingAndGoing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoneyComingAndGoing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MoneyComingAndGoing/Pods-MoneyComingAndGoing.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,6 +99,7 @@
 				CE629A411FE0D440002CF98B /* FindViewController.swift */,
 				CE629A3F1FE0D26D002CF98B /* BOPViewController.swift */,
 				CE6DF5691FEA59A900773931 /* ADDAccountViewController.swift */,
+				CED5E10F1FF3A9CF00F63BC1 /* ClassViewController.swift */,
 				CE9B45E91FDFE03A0020C21D /* MainViewController.swift */,
 				CE9B45EB1FDFE29B0020C21D /* MeViewController.swift */,
 				CE795C8E1FDF6CA200559A52 /* Main.storyboard */,
@@ -219,10 +222,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MoneyComingAndGoing/Pods-MoneyComingAndGoing-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -237,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE9B45EA1FDFE03A0020C21D /* MainViewController.swift in Sources */,
+				CED5E1101FF3A9CF00F63BC1 /* ClassViewController.swift in Sources */,
 				CE795C8D1FDF6CA200559A52 /* ViewController.swift in Sources */,
 				CE9B45EC1FDFE29B0020C21D /* MeViewController.swift in Sources */,
 				CE795C8B1FDF6CA200559A52 /* AppDelegate.swift in Sources */,
@@ -385,8 +393,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoneyComingAndGoing",
+					"$(PROJECT_DIR)/MoneyComingAndGoing/swift-4.0.2",
 				);
 				INFOPLIST_FILE = MoneyComingAndGoing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bzdkj.mcag.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,8 +415,10 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MoneyComingAndGoing",
+					"$(PROJECT_DIR)/MoneyComingAndGoing/swift-4.0.2",
 				);
 				INFOPLIST_FILE = MoneyComingAndGoing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bzdkj.mcag.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
